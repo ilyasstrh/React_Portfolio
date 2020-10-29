@@ -1,38 +1,374 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: #34feaa;
+  --bg-color: #1e1e1e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  background-color: var(--bg-color);
+}
+
+li {
+  list-style: none;
+}
+
+a,
+u {
+  text-decoration: none !important;
+}
+
+section {
+  margin-top: 1.2em;
+}
+
+section h2 {
+  text-align: center !important;
+}
+
+
+/* Navbar Start */
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#navbar ul li {
+  padding: 0.8rem;
+}
+
+#navbar ul li a {
+  color: #fff;
+}
+
+#navbar ul li a:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+/*
+.menu-link:hover::after {
+  content: '';
+  border-bottom: 1px solid #34feaa;
+  display: block;
+}
+*/
+
+/* Navbar End */
+
+
+/* Hero section Start */
+
+#hero {
+  height: 100vh;
+}
+
+#card,
+.card-project {
+  background-color: transparent;
+}
+
+.header-description p {
+  color: var(--primary-color);
+}
+
+#card .card-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  background-image: url("./images/profile.JPG");
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.social-icons {
+  font-size: 1.6rem;
+}
+
+.hero-btn {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  margin: 0.8rem;
+  padding: 0.8rem 1.6rem;
+  color: #fff;
+}
+
+#download {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.hero-btn:hover {
+  background-color: var(--primary-color);
+  animation-duration: 0.2s;
+}
+
+
+/*Scrool down mouse*/
+
+.scroll-down {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-down span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid var(--primary-color);
+  border-right: 5px solid var(--primary-color);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.scroll-down span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.scroll-down span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-15px, -15px);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* Hero section End */
+
+
+/* Education section start */
+
+.timeline a {
+  color: var(--primary-color);
+  cursor: default;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline>li {
+  margin: 20px 0;
+  padding-left: 3.2rem;
+}
+
+ul.timeline>li:before {
+  content: ' ';
+  background: var(--primary-color);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+
+/* Education section end */
+
+span .fa {
+  padding: 0.2rem;
+}
+
+.fa:hover {
+  color: var(--primary-color);
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.technologies-row {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+
+/* Scroll to Rop */
+
+.scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  outline: none;
+  background-color: #efefef;
+  border: 1px solid #333;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+/* End Scroll to Rop */
+
+
+/* Projects Start */
+
+#filter {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#filter button {
+  border: 1px solid #fff;
+  margin: 0.8rem;
+  padding: 0.8rem;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#filter button:hover {
+  border-color: var(--primary-color);
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+}
+
+#my-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-project {
+  padding: 1rem;
+}
+
+.card-project p {
+  color: var(--bg-color);
+}
+
+.project-body {
+  background: hsl(0, 0%, 97%);
+}
+
+.tags {
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--bg-color);
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .14);
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+
+/* Projects End */
+
+
+/* Conatct */
+
+#contact-me {
+  background-color: var(--primary-color);
+  padding: 2em;
+}
+
+.contact {
+  margin: 0;
+  width: 100%;
+}
+
+.contact-details {
+  float: left;
+  width: 60%;
+  color: #5CDB95;
+}
+
+.contact-form {
+  overflow: hidden;
+  width: 40%;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  ;
+}
+
+
+/* Footer */
+
+#footer {
+  margin-top: 0;
+  padding: 1em;
+  background-color: #34495e;
+}
+
+#footer p {
+  color: var(--bg-color);
+}
+
+
+/* End Footer */
+
+@media only screen and (max-width: 768px) {
+  #hero {
+      height: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .scroll-down {
+      display: none;
+  }
+  .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .contact-details,
+  .contact-form {
+      width: 100%;
   }
 }
