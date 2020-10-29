@@ -1,0 +1,41 @@
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .grid-image {
+    display: block;
+    flex-basis: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  /* increase images per line as browser gets larger using media queries
+     this first query makes two images per line at 640px width */
+  @media only screen and (min-width: 640px) {
+    .grid-image {
+      flex-basis: 33.333%;
+    }
+  }
+   
+  /* three images per line when browser width exceeds 960px */
+  @media only screen and (min-width: 960px) {
+    .grid-image {
+      flex-basis: 25%;
+    }
+  }
+   
+  /* four images per line when browser width exceeds 1280px */
+  @media only screen and (min-width: 1280px) {
+    .grid-image {
+      flex-basis: 25%;
+    }
+  }
+   
+  /* five images per line when browser width exceeds 1600px */
+  @media only screen and (min-width: 1600px) {
+    .grid-image {
+      flex-basis: 20%;
+    }
+  }
