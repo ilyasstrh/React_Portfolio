@@ -4,11 +4,10 @@ import '../App.css';
 function Footer() {
     return (
         <section id="footer">
-            <footer style={{textAlign: "center", color: "white"}}>
-                <p>All rights reserved</p>
-                <p>Ilyass TARHRI</p>
+            <footer>
+                <p style={{textAlign: "center", color: "white"}}>Ilyass TARHRI</p>
             </footer>
-        </section>
+        </section> 
     );
 }
 

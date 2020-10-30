@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import '../Gallery.css';
+import '../Gallery.scss';
 import Healthcare from '../images/Portfolio/App_ui.png'
+
 
 function Gallery() {
     const [filter, setFilter] = useState('all');
@@ -14,6 +15,7 @@ function Gallery() {
             image: Healthcare,
             category: ['all', 'Java EE', 'Spring boot', 'Spring Security', 'ReactJS', 'PostgreSQL', 'Git'],
             description: "Une plateforme de faire le suivi, l'accompagnement et l'encadrement des etudiants pendant leurs stages de PFE.",
+            link: 'https://miolapfe.herokuapp.com ',
         },
         {
             title: "React Portfolio",
@@ -21,6 +23,7 @@ function Gallery() {
             image: Healthcare,
             category: ['all', 'ReactJS'],
             description: "Une plateforme de faire le suivi, l'accompagnement et l'encadrement des etudiants pendant leurs stages de PFE.",
+            link: 'https://github.com/ilyasstrh/React_Portfolio',
         },
         {
             title: 'Food delivery system',
@@ -28,6 +31,7 @@ function Gallery() {
             image: Healthcare,
             category: ['all', 'Java', 'JavaFX', 'Maven', 'Git'],
             description: "The main purpose of our application is to allow users to minimize travel time to restaurants and enjoy their home food in a short time by viewing the progress of their order, thus facilitating the task of order management for restaurants, thus offering an optimal path for deliveries, with several IoT-based functionalities.",
+            link: 'https://github.com/ilyasstrh/FOOD_SYSTEM',
         },
         {
             title: 'Healthcare Mobile App',
@@ -35,6 +39,7 @@ function Gallery() {
             image: Healthcare,
             category: ['all', 'Android', 'Gradle', 'Firebase', 'Firestore', 'Git', 'UI/UX'],
             description: "A mobile application that facilitates making appointments and monitoring patients",
+            link: 'https://github.com/ilyasstrh/Health_Care_App',
         },
         {
             title: 'Online Store',
@@ -42,6 +47,7 @@ function Gallery() {
             image: Healthcare,
             category: ['all', 'ReactJS', 'NodeJS', 'MongoDB', 'Express', 'Mongoose', 'UI/UX'],
             description: "An online car rental and management platform",
+            link: 'https://github.com/ilyasstrh/OnlineStore',
         },
         {
             title: 'Car rental management',
@@ -102,7 +108,9 @@ function Gallery() {
                         <div className={hover ? 'hidden' : 'display-content'}>
                             <h2>{item.title}</h2>
                             <p>{item.stack}</p>
-                            <button className="btn hero-btn">Learn more</button>
+                            <button className="btn hero-btn">
+                                <a href={item.link} target="_blank">Learn more</a>
+                            </button>
                         </div>
                     </div>
                 ) : '')}

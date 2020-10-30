@@ -7,18 +7,23 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import ScrollToTop from './components/ScrollToTop';
+
+
 
 function App() {
   return (
-      <div>
-        <Navbar />
-        <Hero />
-        <Education />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
+    <div>
+      <ScrollToTop />
+      <Navbar />
+      <Hero/>
+      <Education />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+
+    </div>
   );
 }
 

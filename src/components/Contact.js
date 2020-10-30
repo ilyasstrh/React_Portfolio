@@ -6,8 +6,8 @@ function Contact() {
         <section  id="contact-me">
             <div className="contact">
                 <div style={{ textAlign: "center" }} className="contact-details">
-                    <h2>Contact me</h2>
-                    <p>hello if you have any opportunity, please contact me!</p>
+                    <h2 style={{ color: "#1e1e1e" }}>Contact me</h2>
+                    <p style={{ color: "#1e1e1e" }}>hello if you have any opportunity, please contact me!</p>
                 </div>
                 <div className="contact-form">
                     <form>
@@ -20,7 +20,7 @@ function Contact() {
                         <div className="form-group">
                             <textarea placeholder="Message*" className="form-control" rows="4"></textarea>
                         </div>
-                        <button type="submit" className="btn btn-primary">Submit message</button>
+                        <button style={{ background: "linear-gradient(180deg, #1e3c72, #2a5298)", color: "white" }} type="submit" className="btn">Submit message</button>
                     </form>
                 </div>
             </div>

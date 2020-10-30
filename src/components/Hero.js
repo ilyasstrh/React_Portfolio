@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Link } from 'react-scroll'
+import Particles from 'react-particles-js';
 
 function Hero() {
     return (
@@ -38,13 +39,12 @@ function Hero() {
                 </div>
             </div>
             <Link to="education" spy={true} smooth={true}>
-            <div onclick="smoothScroll()" type="button" id="scroll-down" className="scroll-down">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+                <div onclick="smoothScroll()" type="button" id="scroll-down" className="scroll-down">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </Link>
-            
         </section>
     );
 }
