@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../Gallery.scss';
 import Healthcare from '../images/Portfolio/App_ui.png'
+import OnlineShop from '../images/Portfolio/onlineshop.jpg'
+import Food from '../images/Portfolio/food.jpg'
+import Portfolio from '../images/Portfolio/portfolio.PNG'
+import PFE from '../images/Portfolio/pfe.PNG'
+import Locar from '../images/Portfolio/locar.PNG'
 
 
 function Gallery() {
@@ -12,7 +17,7 @@ function Gallery() {
         {
             title: "MIOLA PFE",
             stack: "Full Stack Spring/ReactJS",
-            image: Healthcare,
+            image: PFE,
             category: ['all', 'Java EE', 'Spring boot', 'Spring Security', 'ReactJS', 'PostgreSQL', 'Git'],
             description: "Une plateforme de faire le suivi, l'accompagnement et l'encadrement des etudiants pendant leurs stages de PFE.",
             link: 'https://miolapfe.herokuapp.com ',
@@ -20,7 +25,7 @@ function Gallery() {
         {
             title: "React Portfolio",
             stack: "ReactJS",
-            image: Healthcare,
+            image: Portfolio,
             category: ['all', 'ReactJS'],
             description: "Une plateforme de faire le suivi, l'accompagnement et l'encadrement des etudiants pendant leurs stages de PFE.",
             link: 'https://github.com/ilyasstrh/React_Portfolio',
@@ -28,7 +33,7 @@ function Gallery() {
         {
             title: 'Food delivery system',
             stack: "JAVA Desktop",
-            image: Healthcare,
+            image: Food,
             category: ['all', 'Java', 'JavaFX', 'Maven', 'Git'],
             description: "The main purpose of our application is to allow users to minimize travel time to restaurants and enjoy their home food in a short time by viewing the progress of their order, thus facilitating the task of order management for restaurants, thus offering an optimal path for deliveries, with several IoT-based functionalities.",
             link: 'https://github.com/ilyasstrh/FOOD_SYSTEM',
@@ -44,7 +49,7 @@ function Gallery() {
         {
             title: 'Online Store',
             stack: "MongoDB/Express/ReactJS/NodeJS",
-            image: Healthcare,
+            image: OnlineShop,
             category: ['all', 'ReactJS', 'NodeJS', 'MongoDB', 'Express', 'Mongoose', 'UI/UX'],
             description: "An online car rental and management platform",
             link: 'https://github.com/ilyasstrh/OnlineStore',
@@ -52,7 +57,7 @@ function Gallery() {
         {
             title: 'Car rental management',
             stack: "PHP/MySQL",
-            image: Healthcare,
+            image: Locar,
             category: ['all', 'PHP', 'Javascript', 'HTML', 'CSS', 'MySQL'],
             description: "An online car rental and management platform",
         },
@@ -108,8 +113,8 @@ function Gallery() {
                         <div className={hover ? 'hidden' : 'display-content'}>
                             <h2>{item.title}</h2>
                             <p>{item.stack}</p>
-                            <button className="btn hero-btn">
-                                <a href={item.link} target="_blank">Learn more</a>
+                            <button className="btn hero-btn title">
+                                <a id="title" href={item.link} target="_blank">Learn more</a>
                             </button>
                         </div>
                     </div>

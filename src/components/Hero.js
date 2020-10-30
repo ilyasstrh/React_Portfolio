@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { makeStyles } from 'react';
 import '../App.css';
 import { Link } from 'react-scroll'
 import Particles from 'react-particles-js';
 
+
+
 function Hero() {
+
     return (
         <section id="hero" className="container">
+            
             <div className="row">
+                
                 <div id="card" className="card text-center">
                     <div className="card-header">
                         <div className="profile-img"></div>

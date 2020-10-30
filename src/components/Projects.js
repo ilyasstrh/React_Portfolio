@@ -8,7 +8,7 @@ import Gallery from './Gallery.js';
 function Projects() {
     return (
         <section id="projects" className="container">
-            <div className="">
+            <div className="container">
                 <h2>Projects</h2>
                 <Gallery/>
             </div>

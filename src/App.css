@@ -98,7 +98,9 @@ section h2 {
 .social-icons {
   font-size: 1.6rem;
 }
-
+.btn:focus {
+  box-shadow: none;
+}
 .hero-btn {
   border: 1px solid var(--primary-color);
   font-weight: 1rem;
@@ -260,6 +262,7 @@ span .fa {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #filter button {
@@ -327,6 +330,12 @@ span .fa {
   border-radius: 3px;
 }
 
+#title{
+  color: #fff;
+}
+#title:hover{
+  color: #1e1e1e;
+}
 
 /* Projects End */
 
