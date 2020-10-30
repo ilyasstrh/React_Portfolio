@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { Link } from 'react-scroll'
 
 function Hero() {
     return (
@@ -32,16 +33,18 @@ function Hero() {
                             Je suis Ilyass, developpeur web et ux ui designer Je suis Ilyass, developpeur web et ux ui designer Je suis Ilyass, developpeur web et ux ui designer Je suis Ilyass, developpeur web et ux ui designer
                     </p>
                         <a href="#" id="download" className="btn  hero-btn">Download CV</a>
-                        <a href="https://github.com/ilyasstrh?tab=repositories" target="_" className="btn hero-btn">See
-                        Projects</a>
+                        <Link to="projects" spy={true} smooth={true} className="btn hero-btn">My Projects</Link>
                     </div>
                 </div>
             </div>
+            <Link to="education" spy={true} smooth={true}>
             <div onclick="smoothScroll()" type="button" id="scroll-down" className="scroll-down">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            </Link>
+            
         </section>
     );
 }

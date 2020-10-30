@@ -1,34 +1,157 @@
+.image-grid{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-grid .box{
+    position: relative;
+    width: 275px;
+    height: 275px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.image-grid .box:hover{
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+.image-grid .box .grid-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.image-grid .box .grid-image:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, #1e3c72, #2a5298);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+.image-grid .box:hover .grid-image:before{
+    opacity: 1;
+}
+.image-grid .box .grid-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-grid .box .display-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.image-grid .box .display-content h2{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+    transform: translateY(200px);
+}
+.image-grid .box:hover .display-content h2{
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+.image-grid .box .display-content p{
+    transition: 0.5s;
+    transform: translateY(200px);
+}
+.image-grid .box .display-content button{
+    transition: 0.5s;
+    transform: translateY(200px);
+}
+.image-grid .box:hover .display-content p{
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+.image-grid .box:hover .display-content button{
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+.hidden{
+    display: none;
+}
+/*
 .image-grid {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
   }
+  .image-grid:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: linear-gradient(180deg, #f00, #000);
+      mix-blend-mode: multiply;
+      opacity: 0;
+      transition: 0.5s;
+  }
+  .image-grid:before
+  .image-grid:hover{
+    z-index: 10;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+  }
   .grid-image {
     display: block;
+    position: relative;
     flex-basis: 100%;
     padding: 0;
     box-sizing: border-box;
   }
+
+.displayContent{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+*/
    
   /* increase images per line as browser gets larger using media queries
      this first query makes two images per line at 640px width */
   @media only screen and (min-width: 640px) {
-    .grid-image {
+    .box {
       flex-basis: 33.333%;
     }
   }
    
   /* three images per line when browser width exceeds 960px */
   @media only screen and (min-width: 960px) {
-    .grid-image {
+    .box {
       flex-basis: 25%;
     }
   }
    
   /* four images per line when browser width exceeds 1280px */
   @media only screen and (min-width: 1280px) {
-    .grid-image {
+    .box {
       flex-basis: 25%;
     }
   }

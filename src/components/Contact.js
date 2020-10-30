@@ -3,9 +3,9 @@ import '../App.css';
 
 function Contact() {
     return (
-        <section id="contact-me">
+        <section  id="contact-me">
             <div className="contact">
-                <div style={{textAlign: "center"}} className="contact-details">
+                <div style={{ textAlign: "center" }} className="contact-details">
                     <h2>Contact me</h2>
                     <p>hello if you have any opportunity, please contact me!</p>
                 </div>
