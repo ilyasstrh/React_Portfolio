@@ -15,7 +15,7 @@ function Hero() {
                         <div className="profile-img"></div>
                         <div className="header-description">
                             <h1>Ilyass TARHRI</h1>
-                            <Typed className={"descriptionTyped"} strings={["Full Stack Web Developer", "Cloud and DevOps Enthusiast"]} typeSpeed={40} backSpeed={50}
+                            <Typed className={"descriptionTyped"} strings={["Full Stack Web Developer", "Cloud and DevOps Enthusiast", "UI/UX Designer"]} typeSpeed={40} backSpeed={50}
                                 loop />
                             <div className="social-icons">
                                 <span>
