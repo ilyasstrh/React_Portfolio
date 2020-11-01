@@ -1,24 +1,22 @@
-import React, { makeStyles } from 'react';
+import React from 'react';
 import '../App.css';
 import { Link } from 'react-scroll'
+import Typed from "react-typed";
 import Particles from 'react-particles-js';
 
 
 
 function Hero() {
-
     return (
         <section id="hero" className="container">
-            
             <div className="row">
-                
                 <div id="card" className="card text-center">
                     <div className="card-header">
                         <div className="profile-img"></div>
                         <div className="header-description">
-                            <h1 className="header-title">Ilyass TARHRI</h1>
-                            <p>IoT Software and Analytics Student</p>
-                            <p>Full Stack Web Developer</p>
+                            <h1>Ilyass TARHRI</h1>
+                            <Typed className={"descriptionTyped"} strings={["Full Stack Web Developer", "Cloud and DevOps Enthusiast"]} typeSpeed={40} backSpeed={50}
+                                loop />
                             <div className="social-icons">
                                 <span>
                                     <a href="https://twitter.com/ilyass_trh" target="_"><i className="fa fa-twitter"></i></a>

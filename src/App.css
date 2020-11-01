@@ -34,6 +34,7 @@ section h2 {
 
 /* Navbar Start */
 
+
 #navbar ul {
   display: flex;
   flex-direction: row;
@@ -75,6 +76,10 @@ section h2 {
 }
 
 .header-description p {
+  color: var(--primary-color);
+}
+
+.descriptionTyped span{
   color: var(--primary-color);
 }
 

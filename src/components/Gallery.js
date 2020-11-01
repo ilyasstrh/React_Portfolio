@@ -6,6 +6,7 @@ import Food from '../images/Portfolio/food.jpg'
 import Portfolio from '../images/Portfolio/portfolio.PNG'
 import PFE from '../images/Portfolio/pfe.PNG'
 import Locar from '../images/Portfolio/locar.PNG'
+import SmartCityPDF from '../files/SmartCity.pdf'
 
 
 function Gallery() {
@@ -13,6 +14,9 @@ function Gallery() {
     const [projects, setProjects] = useState([]);
     const [hover, setHover] = useState(false);
     const tags = ['all', 'Javascript', "ReactJS", "UI/UX", "Java", "NodeJS", "Firebase", "MongoDB", "Spring boot"];
+    /**
+     * Add portfolio project here
+     */
     const portfolio = [
         {
             title: "MIOLA PFE",
@@ -61,6 +65,14 @@ function Gallery() {
             category: ['all', 'PHP', 'Javascript', 'HTML', 'CSS', 'MySQL'],
             description: "An online car rental and management platform",
         },
+        {
+            title: 'IoT Smart City Prototype',
+            stack: "Arduino/ESP8266",
+            image: Locar,
+            category: ['all','Javascript', 'HTML', 'CSS'],
+            description: "IoT Smart City Prototype",
+            link: SmartCityPDF,
+        },
     ];
 
     useEffect(() => {
@@ -76,6 +88,7 @@ function Gallery() {
     return (
         <div>
             <div id="filter">
+                {/* Tags to filter projects */}
                 <button className="btn btn-project">
                     <a active={filter === 'all'} onClick={() => setFilter('all')}>All</a>
                 </button>

@@ -3,11 +3,25 @@ import '../App.css';
 
 function Contact() {
     return (
-        <section  id="contact-me">
+        <section id="contact-me">
             <div className="contact">
                 <div style={{ textAlign: "center" }} className="contact-details">
                     <h2 style={{ color: "#1e1e1e" }}>Contact me</h2>
                     <p style={{ color: "#1e1e1e" }}>hello if you have any opportunity, please contact me!</p>
+                    <ul style={{ color: "#1e1e1e" }}>
+                        <li>
+                            <i className="fa fa-phone"> </i>
+                            +212 (0) 6 54 17 35 53
+                        </li>
+                        <li>
+                            <i className="fa fa-envelope">  </i>
+                            contact@ilyasstrh.tech
+                        </li>
+                        <li>
+                            <i className="fa fa-map-marker"></i>
+                              Rabat, Morocco
+                        </li>
+                    </ul>
                 </div>
                 <div className="contact-form">
                     <form>

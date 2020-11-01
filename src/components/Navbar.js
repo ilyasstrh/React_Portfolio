@@ -4,7 +4,7 @@ import '../App.css';
 
 function Navbar() {
     return (
-        <nav id="navbar" style={{paddingRight: 11+'%'}}>
+        <nav id="navbar" style={{ paddingRight: 11 + '%' }}>
             <ul id="menu">
                 <li>
                     <Link activeClass="active" to="hero" spy={true} smooth={true} class="menu-link">Home</Link>
