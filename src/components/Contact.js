@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import '../App.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,8 +6,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 
 function Contact() {
-    const recaptchaRef = React.createRef();
-    const FORM_API = process.env.FORM_ENDPOINT; //from formspree.io
     const [form, setForm] = useState({});
     const reCaptcha = useRef();
     const [token, setToken] = useState("");
@@ -90,15 +88,15 @@ function Contact() {
                     <h2 style={{ color: "#1e1e1e" }}>Contact me</h2>
                     <p style={{ color: "#1e1e1e" }}>hello if you have any opportunity, please contact me!</p>
                     <ul style={{ color: "#1e1e1e" }}>
-                        <li>
+                        <li className="contact-details">
                             <i className="fa fa-phone"> </i>
                             +212 (0) 6 54 17 35 53
                         </li>
-                        <li>
+                        <li className="contact-details">
                             <i className="fa fa-envelope">  </i>
                             contact@ilyasstrh.tech
                         </li>
-                        <li>
+                        <li className="contact-details">
                             <i className="fa fa-map-marker"></i>
                               Rabat, Morocco
                         </li>
@@ -106,7 +104,7 @@ function Contact() {
                 </div>
                 <div className="contact-form">
                     <form onSubmit={submitForm}
-                        action="https://formspree.io/mvovrqdy"
+                        action={process.env.REACT_APP_FORM_ENDPOINT}
                         method="POST">
                         <div className="form-group">
                             <input type="text" name="name" onChange={updateForm} value={form.name} className="form-control" placeholder="Your name*" required />
@@ -120,7 +118,7 @@ function Contact() {
                         <button style={{ background: "linear-gradient(180deg, #1e3c72, #2a5298)", color: "white" }} type="submit" className="btn">Submit message</button>
                         <ReCAPTCHA
                             ref={reCaptcha}
-                            sitekey="6LdbNd4ZAAAAAOSnmQXmHrw8PBhV5vVzGE-JZ421"
+                            sitekey={process.env.REACT_APP_RECAPTCHA_KEY}
                             onChange={token => setToken(token)} 
                             onExpired={e => setToken("")}
                         />

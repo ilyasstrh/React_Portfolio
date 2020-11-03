@@ -247,6 +247,19 @@ span .fa {
   text-align: start;
 }
 
+.technologies-row li::before{
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: transparent var(--primary-color);
+  border-style: solid;
+  border-width: 0.5em 0 0.5em 0.5em;
+  position: relative;
+  display: block;   
+  left: -1em;
+  top: 1.25em;  
+}
+
 
 /* Scroll to Rop */
 
@@ -380,6 +393,14 @@ span .fa {
   ;
 }
 
+.contact-details{
+  color: rgb(30, 30, 30);
+}
+
+.contact-details .fa{
+  color: rgb(30, 30, 30);
+}
+
 
 /* Footer */
 
@@ -408,6 +429,7 @@ span .fa {
   }
   #navbar{
     padding: 0;
+    display: none;
   }
   #navbar ul{
     display: flex;

@@ -3,6 +3,7 @@ import '../Gallery.scss';
 import Healthcare from '../images/Portfolio/App_ui.png'
 import OnlineShop from '../images/Portfolio/onlineshop.jpg'
 import Food from '../images/Portfolio/food.jpg'
+import smartCity from '../images/Portfolio/smartCity.jpg'
 import Portfolio from '../images/Portfolio/portfolio.PNG'
 import PFE from '../images/Portfolio/pfe.PNG'
 import Locar from '../images/Portfolio/locar.PNG'
@@ -68,7 +69,7 @@ function Gallery() {
         {
             title: 'IoT Smart City Prototype',
             stack: "Arduino/ESP8266",
-            image: Locar,
+            image: smartCity,
             category: ['all','Javascript', 'HTML', 'CSS'],
             description: "IoT Smart City Prototype",
             link: SmartCityPDF,

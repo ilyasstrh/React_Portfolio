@@ -34,7 +34,11 @@ function Hero() {
                     <div className="card-body">
                         <h2 className="card-title">About me</h2>
                         <p className="card-text">
-                            Je suis Ilyass, developpeur web et ux ui designer Je suis Ilyass, developpeur web et ux ui designer Je suis Ilyass, developpeur web et ux ui designer Je suis Ilyass, developpeur web et ux ui designer
+                        Hello 👋🏼, I am Ilyass, Full-Stack Web Developer, based in Morocco, 
+                        I am passionate about Web Development, DevOps and Cloud. 
+                        I focus on modern, responsive website solutions that are easy to use by the end user. 
+                        If you have an opportunity, feel free to contact me.
+                             
                     </p>
                         <a href="#" id="download" className="btn  hero-btn">Download CV</a>
                         <Link to="projects" spy={true} smooth={true} className="btn hero-btn">My Projects</Link>
