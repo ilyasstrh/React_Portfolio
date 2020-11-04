@@ -86,7 +86,7 @@ function Contact() {
             <div className="contact">
                 <div style={{ textAlign: "center" }} className="contact-details">
                     <h2 style={{ color: "#1e1e1e" }}>Contact me</h2>
-                    <p style={{ color: "#1e1e1e" }}>hello if you have any opportunity, please contact me!</p>
+                    <p style={{ color: "#1e1e1e" }}>If you have got a project in mind,  or an opportunity, feel free to contact me!</p>
                     <ul className="contact-infos" style={{ color: "#1e1e1e" }}>
                         <li className="contact-details">
                             <i className="fa fa-phone"></i>
