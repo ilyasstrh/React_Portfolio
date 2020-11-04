@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/ilyasstrh/React_Portfolio.svg?token=Qo7HxTtAa62qsJPUDmay&branch=main)](https://travis-ci.com/ilyasstrh/React_Portfolio)
 # React Portfolio
 
 A personal portfolio website made with ReactJS.
