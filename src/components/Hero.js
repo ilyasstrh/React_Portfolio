@@ -40,7 +40,7 @@ function Hero() {
                         If you have an opportunity, feel free to contact me.
                              
                     </p>
-                        <a href="#" id="download" className="btn  hero-btn">Download CV</a>
+                        <a href="https://drive.google.com/file/d/1t0OMlmOlYm_aJHREWc-71SO2KZp2Fu_9/view?usp=sharing" target="_blank" id="download" className="btn  hero-btn">Download CV</a>
                         <Link to="projects" spy={true} smooth={true} className="btn hero-btn">My Projects</Link>
                     </div>
                 </div>
