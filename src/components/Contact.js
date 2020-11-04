@@ -87,18 +87,19 @@ function Contact() {
                 <div style={{ textAlign: "center" }} className="contact-details">
                     <h2 style={{ color: "#1e1e1e" }}>Contact me</h2>
                     <p style={{ color: "#1e1e1e" }}>hello if you have any opportunity, please contact me!</p>
-                    <ul style={{ color: "#1e1e1e" }}>
+                    <ul className="contact-infos" style={{ color: "#1e1e1e" }}>
                         <li className="contact-details">
-                            <i className="fa fa-phone"> </i>
-                            +212 (0) 6 54 17 35 53
+                            <i className="fa fa-phone"></i>
+                                  <span>  +212 (0) 6 54 17 35 53</span>
                         </li>
                         <li className="contact-details">
-                            <i className="fa fa-envelope">  </i>
-                            contact@ilyasstrh.tech
+                            <i className="fa fa-envelope"></i>
+                            <span>  contact@ilyasstrh.tech</span>
+                                  
                         </li>
                         <li className="contact-details">
                             <i className="fa fa-map-marker"></i>
-                              Rabat, Morocco
+                            <span>  Rabat, Morocco</span>
                         </li>
                     </ul>
                 </div>

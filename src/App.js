@@ -4,11 +4,10 @@ import Hero from './components/Hero';
 import Contact from './components/Contact';
 import Education from './components/Education';
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Header from './components/Header.js';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import ScrollToTop from './components/ScrollToTop';
-import ParticlesBg from 'particles-bg'
 import Particles from 'react-particles-js';
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -18,7 +17,7 @@ function App() {
     return (
       <div>
         <ScrollToTop />
-        <Navbar />
+        <Header />
         <Particles
           style={{
             position: 'absolute',

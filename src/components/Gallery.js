@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../Gallery.scss';
+import '../styles/Gallery.scss';
 import Healthcare from '../images/Portfolio/App_ui.png'
 import OnlineShop from '../images/Portfolio/onlineshop.jpg'
 import Food from '../images/Portfolio/food.jpg'

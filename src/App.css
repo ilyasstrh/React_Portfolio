@@ -44,6 +44,24 @@ section h2 {
   z-index: 1; 
 }
 
+.header{
+  display: grid;
+  grid-template-areas: "logo nav";
+}
+
+#navbar{
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.burger{
+  display: none;
+}
+
+/*
 #navbar{
   padding-right: 11%;
 }
@@ -65,7 +83,7 @@ section h2 {
   color: var(--primary-color);
   cursor: pointer;
 }
-
+*/
 /* Navbar End */
 
 
@@ -73,6 +91,7 @@ section h2 {
 
 #hero {
   height: 100vh;
+  padding-top: 3.2rem;
 }
 
 #card,
@@ -397,8 +416,13 @@ span .fa {
   color: rgb(30, 30, 30);
 }
 
-.contact-details .fa{
+.contact-details .fa, .contact-details span{
   color: rgb(30, 30, 30);
+}
+.contact-infos{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -427,10 +451,13 @@ span .fa {
     font-size: 1.8rem;
     z-index: 1; 
   }
+  
+  /*
   #navbar{
     padding: 0;
     display: none;
   }
+  
   #navbar ul{
     display: flex;
     height: 100vh;
@@ -451,6 +478,7 @@ span .fa {
   #navbar ul li:hover a{
     color: var(--bg-color);
 }
+*/
   #hero {
       height: auto;
   }
