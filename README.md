@@ -1,8 +1,8 @@
+# React Portfolio
+
+A personal portfolio website made with ReactJS.
+
 Live version: [ilyasstrh.herokuapp.com](https://ilyasstrh.herokuapp.com/)
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
