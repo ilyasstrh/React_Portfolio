@@ -117,12 +117,13 @@ function Contact() {
                             <textarea placeholder="Message*" name="message" onChange={updateForm} value={form.message} className="form-control" rows="4" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></textarea>
                         </div>
                         <button style={{ background: "linear-gradient(180deg, #1e3c72, #2a5298)", color: "white" }} type="submit" className="btn">Submit message</button>
+                        { process.env.REACT_APP_RECAPTCHA_KEY && (
                         <ReCAPTCHA
                             ref={reCaptcha}
                             sitekey={process.env.REACT_APP_RECAPTCHA_KEY}
                             onChange={token => setToken(token)} 
                             onExpired={e => setToken("")}
-                        />
+                        />)}
                     </form>
                 </div>
             </div>
