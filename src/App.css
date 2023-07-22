@@ -52,7 +52,7 @@ section h2 {
 #navbar{
   grid-area: nav;
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(8, auto);
   align-items: center;
   justify-items: center;
 }
@@ -424,6 +424,22 @@ span .fa {
     flex-direction: column;
     align-items: center;
 }
+
+/* Certifications section start */
+
+#image-certifs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.certifs {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Certifications section end */
 
 
 /* Footer */

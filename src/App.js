@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Hero from './components/Hero';
 import Contact from './components/Contact';
+import Experience from './components/Experience';
 import Education from './components/Education';
 import Footer from './components/Footer';
 import Header from './components/Header.js';
@@ -10,6 +11,7 @@ import Skills from './components/Skills';
 import ScrollToTop from './components/ScrollToTop';
 import Particles from 'react-particles-js';
 import { ToastContainer, toast } from 'react-toastify';
+import Certifications from './components/Certifications';
 
 
 
@@ -63,9 +65,11 @@ function App() {
         />
 
         <Hero />
+        <Experience/>
         <Education />
         <Skills />
         <Projects />
+        <Certifications/>
         <ToastContainer />
         <Contact />
         <Footer />

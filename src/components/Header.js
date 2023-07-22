@@ -42,9 +42,11 @@ export default function Header() {
                 <nav className="Nav">
                     <Link activeClass="active" to="hero" onClick={toggleNav} spy={true} smooth={true} class="menu-link">Home</Link>
                     <Link to="hero" spy={true} smooth={true} onClick={toggleNav} class="menu-link">About me</Link>
+                    <Link to="experience" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Experience</Link>
                     <Link to="education" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Education</Link>
                     <Link to="skills" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Skills</Link>
                     <Link to="projects" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Projects</Link>
+                    <Link to="certifications" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Certifications</Link>
                     <Link to="contact-me" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Contact</Link>
                 </nav>
             </CSSTransition>
