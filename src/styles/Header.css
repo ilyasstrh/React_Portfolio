@@ -14,9 +14,12 @@
   .Nav {
     display: grid;
     grid-area: nav;
-    grid-template-columns: repeat(8, auto);
+    grid-template-columns: repeat(9, auto);
     align-items: center;
     justify-items: center;
+  }
+  .Nav .blog:hover{
+    color: #fff;
   }
   .Nav a {
     color: #fff;

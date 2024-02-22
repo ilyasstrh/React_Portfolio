@@ -47,6 +47,7 @@ export default function Header() {
                     <Link to="skills" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Skills</Link>
                     <Link to="projects" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Projects</Link>
                     <Link to="certifications" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Certifications</Link>
+                    <Link to="blog" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Blog</Link>
                     <Link to="contact-me" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Contact</Link>
                 </nav>
             </CSSTransition>

@@ -3,12 +3,27 @@ import '../App.css';
 import AwsCP from '../images/certifs/aws_cp.png'
 import gitlab from '../images/certifs/gitlab.png'
 import k8sgcp from '../images/certifs/k8s_gcp.png'
+import k8s from '../images/certifs/k8s.png'
+import AWSSAA from '../images/certifs/saa.png'
 
 function Certifications() {
 
     /* add certifications here */
 
     const certifications = [
+       
+        {
+            link: "https://www.credly.com/badges/97af293c-ecad-46b1-bf23-99f7d9446a0d/public_url",
+            certImgSrc: k8s,
+            certImgAlt: "Certified Kubernetes Administrator",
+            certImgTitle: "Certified Kubernetes Administrator"
+        },
+        {
+            link: "https://www.credly.com/badges/24a9cc00-1aa9-46f9-ad1d-6a3b1168bcbb/public_url",
+            certImgSrc: AWSSAA,
+            certImgAlt: "AWS Certified Solutions Architect",
+            certImgTitle: "AWS Certified Solutions Architect"
+        },
         {
             link: "https://www.credly.com/badges/4d602eaf-0e6b-48b9-a56d-f34b64fc13f9/public_url",
             certImgSrc: AwsCP,
@@ -20,12 +35,6 @@ function Certifications() {
             certImgSrc: gitlab,
             certImgAlt: "GitLab Certified Associate",
             certImgTitle: "GitLab Certified Associate"
-        },
-        {
-            link: "https://www.cloudskillsboost.google/public_profiles/3683917e-2212-4abf-936d-307f0117ea02/badges/3519204",
-            certImgSrc: k8sgcp,
-            certImgAlt: "Kubernetes in Google Cloud",
-            certImgTitle: "Kubernetes in Google Cloud"
         }
     ]
 
